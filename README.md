@@ -12,9 +12,9 @@ Watch a full walkthrough of the application in action:
 ---
 ## About The Project
 
-This blog web application was developed as a full-stack project using modern web development tools and technologies. It enables users to interact with blog content through intuitive UI elements and performs all essential CRUD operations (Create, Read, Update, Delete) on blog posts.
+This blog web application was developed using modern web development tools and technologies. It enables users to interact with blog content through intuitive UI elements and performs all essential CRUD operations (Create, Read, Update, Delete) on blog posts.
 
-The project was built to strengthen skills in backend development with Express.js, templating with EJS, and front-end responsiveness using Bootstrap. It follows an organized routing structure and clean MVC-like separation of concerns.
+The project was built to strengthen skills in backend development with Express.js, templating with EJS, and front-end responsiveness using Bootstrap. 
 
 ### Features
 
