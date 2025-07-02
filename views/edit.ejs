@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+<div class="container mt-5">
+  <h2>Edit Post</h2>
+  <form action="/edit/<%= post.id %>" method="POST">
+    <input class="form-control mb-3" type="text" name="title" value="<%= post.title %>" required>
+    <input class="form-control mb-3" type="text" name="author" value="<%= post.author %>" required>
+    <textarea class="form-control mb-3" name="content" rows="5" required><%= post.content %></textarea>
+    <button type="submit" class="btn btn-success btn-md">Update</button>
+  </form>
+</div>
+
+<%- include("partials/footer") %>

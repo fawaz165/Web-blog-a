@@ -1,0 +1,47 @@
+<%- include("partials/header") %>
+
+    <div class="text-center mt-4">
+        <a href="/compose" class="btn btn-success btn-md">CREATE YOUR BLOG</a>
+    </div>
+
+
+    <div class="container">
+        <% if (posts.length===0) { %>
+            <p class="text-muted text-center mt-3">No blog posts yet. Be the first to write one!</p>
+            <% } else { %>
+                <div class="row">
+                    <% posts.forEach(post=> { %>
+                        <div class="col-md-4 mb-4 mt-3">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title fw-bold">
+                                            <%= post.title %>
+                                        </h5>
+                                        <p class="card-subtitle mb-1"><strong>Author:</strong>
+                                            <%= post.author %>
+                                        </p>
+                                        <p class="card-text">
+                                            <%= post.content.substring(0, 60) %>...
+                                        </p>
+                                        <p class="text-muted"><strong>Date:</strong>
+                                            <%= post.date %>
+                                        </p>
+                                    </div>
+                                    <div class="mt-3 d-flex  justify-content-between">
+                                        <a href="/view/<%= post.id %>" class="btn btn-dark btn-md">View</a>
+                                        <a href="/edit/<%= post.id %>" class="btn btn-dark btn-md">Edit</a>
+                                        <form action="/delete/<%= post.id %>" method="POST" style="display:inline;">
+                                            <button class="btn btn-dark btn-md"
+                                                onclick="return confirm('Are you sure?')">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+                <% } %>
+    </div>
+
+    <%- include("partials/footer") %>

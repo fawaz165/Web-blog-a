@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+    <div class="container mt-5">
+        <h2>
+            <%= post.title %>
+        </h2>
+        <p><strong>Author:</strong>
+            <%= post.author %>
+        </p>
+        <p><strong>Date:</strong>
+            <%= post.date %>
+        </p>
+        <hr>
+        <p>
+            <%= post.content %>
+        </p>
+        <a href="/view" class="btn btn-success mt-3">Back to Blog</a>
+    </div>
+
+    <%- include("partials/footer") %>

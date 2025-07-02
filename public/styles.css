@@ -1,0 +1,16 @@
+.container {
+    max-width: 700px;
+}
+
+.container h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form .btn-success {
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
