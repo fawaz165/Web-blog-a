@@ -38,7 +38,7 @@ The project was built to strengthen skills in backend development with Express.j
 - **body-parser** – Middleware for parsing form data
 
 ---
-## 🔮 Future Work
+## Future Work
 
 - **User Authentication**  
   Add login and registration functionality to enable user-specific blog management and data privacy.
