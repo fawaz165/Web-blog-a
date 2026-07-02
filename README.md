@@ -1,5 +1,7 @@
 # Blog Web Application
 
+🚀 **Live Demo:** [https://web-blog-a.onrender.com/](https://web-blog-a.onrender.com/)
+
 A dynamic, secure, and responsive blog platform that allows users to register, log in, create, read, update, and delete blog posts. It features a clean interface, MongoDB database integration, and a premium dark theme toggle with local state persistence.
 
 ---
